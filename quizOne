@@ -1,0 +1,97 @@
+JSDoc comment
+This is a multiline comment that the complier skips.
+Everything within this JSDoc is used to give information to the next coder.
+This one contains things like author name and contact, version number,
+a brief summery of the code, and a to do list.
+This line ends the comment.
+
+This is a pragma that makes the complier less forgiving to mistakes.
+This imports a library called "readline sync" that allows the code to use the data that the user inputs.
+
+This declares a global variable called continueResponse. It's on its own line because it uses boolean logic.
+This declares global variables called currentMonth, currentGrade, currentClassroom, upperTuition. These are all numerics.
+This declares the constant 'max grade' and assigns in the value 8. This, and all the following constants, are used to illiminate magic numbers.
+This declares the constant 'max month' and assigns in the value 9.
+This declares the constant 'max classroom' and assigns in the value 3.
+This declares the constant 'kindergarten tuition' and assigns in the value 80.
+
+This is the dispatcher method - called "main" function
+This clears the screen, then there is a single line comment that is ignored by the complier
+This calls the setContinueResponse method
+This starts a while loop that says: while continueResponse is one, the following lines happen.
+This calls the method 'setCurrentMonth'
+This calls the method 'setCurrentGrade'
+This calls the method 'setCurrentClassroom'
+This calls the method 'processPaymentCoupons'
+This calls the method 'setContinueResponse'
+This starts a 'for' loop that sets i equal to 0, tests if i is less than the constant 'max classroom', and if i is less than max classroom, it calls the 'printGoodbye' method. Then it adds one to i. If i isn't less that printGoodbye, then it breaks out of the 'for' loop.
+This is the actual call to the method 'printGoodbye'
+This ends to for loop.
+This ends the while loop.
+This ends the 'main' function, or the dispatcher method.
+
+This is the call to the dispatcher - or main - method.
+
+This is the setContinueResponse function
+This is an 'if' loop that says if continueResponse is null (has nothing in it, first time the program runs) the following happens. If continueResponse isn't null, it skips to like 38
+This assigns -1 to continueResponse.
+This starts a while loop that says when continueResponse doesn't equal 1 or 0, the following happens. If it does equal 1 or 0, it breaks out of the while loop and skips to 41
+This displays the question 'Do you want to..." and assigns the answer to continueResponse
+This closes the while loop
+This closes the if loop, and starts the else loop that says if continueResponse doesn't not equal 0 or 1 (so if it equals 0 or 1), do the following
+This assigns 1 to continueResponse
+This closes the else loop
+This closes the setContinueResponse function
+
+this is the setCurrentMonth function
+This starts an if bloack that says if currentMonth doesn't equal null and is less than or equal to the constant 'max month' the following line happens
+This adds one to currentMonth
+This ends the if loop and starts an else loop
+This sets the currentMonth equal to 0 (basically, this happens only on the first time through the code)
+This ends the else loop
+This ends the setCurrentMonth function
+
+This is the function setCurrentGrade
+This starts an if loop that says if currentGrade is not undefined (or null) and it's less than or equal to the constant 'max grade', the following happens
+This adds one to currentGrade
+This ends the if block and starts an else block
+This sets currentGrade equal to 0 (this only happens the first time through)
+This ends the else loop
+This ends the setCurrentGrade function
+
+This is the function setCurrentClassroom
+This starts an if loop that says if currentClassroom is not undefined (or null) and it's less than or equal to the constant 'max classroom', the following happens
+This adds one to currentClassroom
+This ends the if block and starts an else block
+This sets currentClassroom equal to 1 (this only happens the first time through)
+This ends the else loop
+This ends the setCurrentClassroom function
+
+This is the function setUpperTuition
+This sets a local constant 'base tuition' and assigns 60 to it
+This sets upperTuition equal to the constant 'base tuition' multiplied by the variable currentGrade
+This closes the function setUpperTuition
+
+This is the function processPaymentCoupons
+This starts a while loop that says while currentGrade is less than the constant 'max grade', the following happens
+This starts a while loop that says while currentClassroom is less than the constant 'max classroom', the following happens
+This starts a while loop that says while currentMonth is less than the constant 'max month', the following happens
+This starts an if loop that says the following happens if currentGrade is equal to 0, and it doesn't test for number type
+This prints the phrase 'the tuition for month (current month variable), for classroom (current classroom variable), of grade (current grade variable) is (kindergarten tuition constant).' and it prints it on a new line, tabbed in.
+This closes the if loop and starts an else loop
+This calls the setUpperTuition function
+This prints the phrase 'the tuition for month (current month variable), for classroom (current classroom variable), of grade (current grade variable) is (upper tuition variable).' and it prints it on a new line, tabbed in.
+This closes the else loop
+This calls the setCurrentMonth function
+This closes the 'currentMonth' while loop
+This calls the setCurrentClassroom function
+This calls the setCurrentMonth function
+This closes the currentClassroom while loop
+This calls setCurrentGrade
+This calls setCurrentClassroom
+This closes the currentGrade while loop
+This closes the processPaymentCoupons function
+
+This is the printGoodbye function
+This prints 'Goodbye.' tabbed over to the screen.
+This closes the printGoodbye function
